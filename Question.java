@@ -9,7 +9,7 @@ public class question {
         this.text = text;
         this.choices = choices;
         this.correctAnswer = correctAnswer;
-        // I added this so if the answer is wrong the user can get an explanation on why its wrong.
+        // I added this so if the answer is wrong the user can get an explanation on why its wrong. or it can just say it anyway.
         this.reason = reason;
     }
 
