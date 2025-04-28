@@ -10,6 +10,8 @@ body {
     padding: 0px;
 
     background-image: url(/Images/PS30TH_16x9_WALLPAPER.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #lobby {
@@ -26,7 +28,7 @@ body {
     border: 2px solid black;
     border-radius: 10px;
 
-    background-color: orangered;
+    background-color: rgb(4, 0, 53);
     color: white;
 
     position: absolute;
@@ -41,7 +43,7 @@ body {
 }
 
 #quizButton:active {
-    background-color: rgb(173, 59, 17);
+    background-color: rgb(3, 0, 32);
 }
 
 
