@@ -9,17 +9,30 @@ class Question {
     checkAnswer(userAnswer) {
         return userAnswer === this.correctAnswer;
     }
-
+    
+    getQuestion() {
+        return this.text;
+    }
+    /*
     toString() {
         return `${this.text} ${this.choices.join(", ")}`;
     }
-
+    */
     getReason() {
         return this.reason;
     }
 }
 
+function main() {
+
+}
+
 function quizGame(list) {
+    let quizList = list;
+    let question = document.getElementById("question");
+
+    question.innerHTML = quizList[0].toString;
+
 
 // this goes at or near the end to calculate the answers you got, right/total; ex) 14/16
     let answerTotal = checkAllAnswers(list);
@@ -68,9 +81,9 @@ function quizChoice(choice) {
         );
 
         let genreScreen = document.getElementById("genreScreen");
-        let quizGame = document.getElementById("quizGame");
+        let gameScreen = document.getElementById("quizGame");
         genreScreen.style.visibility = "hidden";
-        quizGame.style.visibility = "visible";
+        gameScreen.style.visibility = "visible";
 
         quizGame(quizList);
 
